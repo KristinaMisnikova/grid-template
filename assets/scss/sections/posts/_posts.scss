@@ -1,0 +1,27 @@
+.posts {
+  @include lg-min {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include lg-md {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include md {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__container {
+    margin-bottom: 20px;
+
+    @extend %container;
+  }
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    padding-right: $gap;
+    padding-left: $gap;
+  }
+}

@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+
+  letter-spacing: 0.1em;
+
+  color: $color-gray;
+
+  font-family: "Roboto", sans-serif;
+  font-size: $font-size;
+}
+
+a {
+  text-decoration: none;
+
+  color: $color-light;
+}
+
+p {
+  color: $color-gray;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  line-height: 1.2;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+  @include lg {
+    font-size: 1.875rem;
+  }
+}
+
+h2 {
+  margin-top: 0;
+
+  letter-spacing: 0.1em;
+
+  color: $color-primary;
+
+  font-family: $font-header;
+  line-height: 1.2;
+
+  @include lg-min {
+    margin-bottom: 56px;
+
+    font-size: 2.5rem;
+  }
+  @include lg-md {
+    margin-bottom: 42px;
+
+    font-size: 2rem;
+  }
+  @include md-sm {
+    margin-bottom: 36px;
+
+    font-size: 1.5rem;
+  }
+  @include sm {
+    margin-bottom: 36px;
+
+    text-align: center;
+
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  transition: color 0.5s;
+  letter-spacing: 0.05em;
+
+  color: $color-gray;
+
+  font-size: 1.125rem;
+}
+
+.btn {
+  display: block;
+
+  transition: background-color 0.5s;
+  text-align: center;
+
+  &:focus,
+  &:hover {
+    background-color: $color-accent!important;
+  }
+}
+
+.btn--light {
+  letter-spacing: 0.1em;
+
+  border: 2px solid $color-light;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  @include lg-min {
+    min-width: 250px;
+    height: 60px;
+    padding: 18px $gap;
+
+    font-size: 1.125rem;
+  }
+  @include lg-md {
+    min-width: 200px;
+    height: 50px;
+    padding: 14px $gap;
+  }
+  @include md {
+    min-width: 170px;
+    height: 40px;
+    padding: 9px $gap;
+  }
+}
+
+.btn--primary {
+  height: 60px;
+  padding: 18px $gap;
+
+  border: 2px solid $color-primary;
+  background-color: rgba($color-primary, 0.8);
+
+  font-size: 1.125rem;
+
+  @include sm-min {
+    min-width: 350px;
+  }
+  @include sm {
+    min-width: 100%;
+  }
+}
