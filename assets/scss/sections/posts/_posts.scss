@@ -17,10 +17,10 @@
 
     @extend %container;
   }
+
   &__actions {
     display: flex;
     justify-content: center;
-
     padding-right: $gap;
     padding-left: $gap;
   }

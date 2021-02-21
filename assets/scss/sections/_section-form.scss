@@ -1,43 +1,43 @@
 .form {
   padding: 30px 0;
-
   background-color: $color-primary;
-
+  
   &__container {
     display: grid;
+    gap: $gap;
 
     @extend %container;
-    gap: $gap;
+    
     @include lg-min {
       grid-template-columns: repeat(3, 1fr);
     }
+
     @include lg-md {
       grid-template-columns: repeat(3, 1fr);
     }
+
     @include md-sm {
       grid-template-columns: 1fr 1fr;
     }
   }
 
   &-item {
-    @include md-sm {
+    @include md-sm {      
       &:nth-of-type(1) {
         grid-column: 1 / span 2;
       }
     }
+
     &__input {
       width: 100%;
       height: 60px;
       padding: 0 30px;
-
       transition: background-color 0.5s;
       letter-spacing: 0.15em;
-
       color: $color-light;
       border: 2px solid rgba($color-light, 0);
       border-bottom-color: rgba($color-light, 0.25);
       background-color: rgba($color-light, 0.05);
-
       font-size: 1.125rem;
 
       &::placeholder {
@@ -58,9 +58,7 @@
     }
     .btn--primary {
       width: 100%;
-
       letter-spacing: 0.1em;
-
       color: $color-light;
       border-color: rgba($color-light, 0);
       border-bottom-color: rgba($color-light, 0.2);
@@ -73,7 +71,6 @@
       &:hover,
       &:focus {
         cursor: pointer;
-
         border-color: $color-light;
       }
     }

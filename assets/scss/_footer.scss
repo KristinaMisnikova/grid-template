@@ -1,8 +1,6 @@
 .footer {
   padding: 60px $gap 60px;
-
   text-align: center;
-
   background-color: $color-primary;
 
   &__container {
@@ -11,14 +9,10 @@
 
   &-social {
     position: relative;
-
     display: grid;
     justify-content: center;
-
     margin-bottom: 60px;
-
     text-align: center;
-
     grid-template-columns: repeat(auto-fit, minmax(51.5px, max-content));
 
     &__link {
@@ -34,12 +28,9 @@
       position: absolute;
       bottom: -30px;
       left: calc(50% - 75px / 2);
-
       width: 75px;
       height: 2px;
-
       content: "";
-
       background-color: rgba($color-light, 0.1);
     }
 
@@ -47,22 +38,19 @@
       font-size: 2.25rem;
     }
   }
+
   &-copy {
     &__text {
       &:nth-of-type(1) {
         display: block;
-
         margin-right: -0.5em;
-
         letter-spacing: 0.33em;
-
         font-weight: 100;
       }
+
       &:nth-of-type(2) {
         letter-spacing: 0.05em;
-
         color: $color-gray-light;
-
         font-weight: 700;
       }
     }

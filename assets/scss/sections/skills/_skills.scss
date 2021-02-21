@@ -9,7 +9,6 @@
 
   &__container {
     display: grid;
-
     margin-bottom: $gap;
 
     @include lg-min {
@@ -41,6 +40,7 @@
       grid-auto-rows: 200px;
     }
   }
+
   &__actions {
     display: flex;
     justify-content: center;

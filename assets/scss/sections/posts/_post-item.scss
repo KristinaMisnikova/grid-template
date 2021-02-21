@@ -1,8 +1,8 @@
 .post {
   &__grid {
     display: grid;
-
     gap: $gap;
+
     @include lg-min {
       grid-template-areas: "a1 a1 a2 a3" "a4 a5 a6 a6";
       grid-template-columns: repeat(4, 1fr);
@@ -23,24 +23,18 @@
 
   &-item {
     transition: background-color 0.5s;
-
     background-color: #f2f2f2;
-
 
     &__link {
       display: grid;
-
       height: 100%;
-
       grid-template-rows: 300px 1fr;
     }
 
     &__caption {
       display: grid;
       align-content: center;
-
       padding: $gap;
-
       text-align: center;
 
       h3 {
@@ -52,23 +46,25 @@
         letter-spacing: 0;
       }
     }
+
     &__image {
       display: flex;
       overflow: hidden;
 
       img {
         width: 100%;
-
         transition: transform 0.5s;
-
         object-fit: cover;
       }
     }
+
     &:hover {
       background-color: #d8d8d8;
+
       img {
         transform: scale(1.1);
       }
+      
       h3,
       p {
         color: $color-primary;
@@ -76,7 +72,6 @@
     }
   }
 }
-
 
 @for $i from 1 through 6 {
   .post-item:nth-of-type(#{$i}) {

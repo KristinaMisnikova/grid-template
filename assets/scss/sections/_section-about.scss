@@ -1,6 +1,5 @@
 .about {
   letter-spacing: 0.055em;
-
   background-color: $color-gray-light;
 
   @include lg-min {
@@ -20,6 +19,7 @@
     display: grid;
 
     @extend %container;
+
     @include lg-min {
       gap: 100px;
       grid-template-columns: 1fr 271px;
@@ -43,20 +43,17 @@
       @include lg-min {
         font-size: 1.125rem;
       }
+
       &:first-of-type {
         position: relative;
-
         margin-top: -5px;
 
         &::after {
           position: absolute;
           top: 0;
-
           width: 2px;
           height: 200px;
-
           content: "";
-
           background-color: rgba(#707070, 0.1);
 
           @include lg-min {
@@ -73,16 +70,16 @@
           }
         }
       }
-
+      
       &:last-of-type {
         margin: 0;
       }
     }
   }
+
   &__image {
     display: grid;
     align-content: center;
-
     justify-items: center;
 
     img {
